@@ -79,9 +79,10 @@ public class Date {
 
     try {
       dateFormat.parse(dateString);
-      return (year >= 1900) && (year <= 2050);
+      return (year >= 1900) && (year <= 2500);
     } catch (ParseException e) {
       return false;
+      //¿Por qué en 2050? Mejor en casi 500 años :)
     }
   }
 }
